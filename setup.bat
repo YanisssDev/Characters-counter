@@ -1,0 +1,13 @@
+@echo off
+echo Mise en place d'environnement virtuel...
+python -m venv venv
+call venv\Scripts\activate.bat
+
+echo Installation des packages requis...
+pip install tk
+
+echo Lancement du compteur de caracteres...
+python counter.py
+
+echo Desactivation de l'environnement virtuel...
+deactivate
